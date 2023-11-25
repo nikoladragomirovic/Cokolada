@@ -17,21 +17,32 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="sticky top-0 left-0 w-full bg-background py-3 duration-300 outline-dashed outline-2 outline-text">
+    <nav className="sticky top-0 left-0 w-full bg-background py-3 duration-300 outline outline-1 outline-text z-20">
       <ul className="flex flex-row items-center justify-between">
-        <li
-          className="text-3xl font-extrabold tracking-wider ml-5 text-text duration-300"
-          Link
-          to="/"
-        >
-          Ћоколада
+        <li className="text-3xl font-extrabold tracking-wider ml-5 text-text duration-300">
+          <Link to="/">Ћоколада</Link>
         </li>
         <div className="flex flex-row items-center justify-start duration-300">
           <li className={listItem}>
-            <Link to="/about">Абаут</Link>
+            <Link to="/onama">О нама</Link>
           </li>
           <li className={listItem}>
-            <Link to="/contact">Контакт</Link>
+            <Link to="/razvoj">Развој</Link>
+          </li>
+          <li className={listItem}>
+            <Link to="/dizajn">Дизајн</Link>
+          </li>
+          <li className={listItem}>
+            <Link to="/resursi">Ресурси</Link>
+          </li>
+          <li className={listItem}>
+            <Link to="/magazin">Магазин</Link>
+          </li>
+          <li className={listItem}>
+            <Link to="/zajednica">Заједница</Link>
+          </li>
+          <li className={listItem}>
+            <Link to="/kontakt">Контакт</Link>
           </li>
           <DarkModeSwitch
             className="mr-8 duration-300"
