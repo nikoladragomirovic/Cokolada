@@ -8,6 +8,8 @@ import Info from "./components/Info";
 import Report from "./components/Report";
 import Cirilizator from "./components/Cirilizator";
 import Fonts from "./components/Fonts";
+import Board from "./components/Board";
+import Post from "./components/Post";
 
 function App() {
   return (
@@ -23,6 +25,8 @@ function App() {
         <Route path="/report" element={<Report />} />
         <Route path="/cirilizator" element={<Cirilizator />} />
         <Route path="/fontovi" element={<Fonts />} />
+        <Route path="/reportboard" element={<Board />} />
+        <Route path="/post" element={<Post />} />
       </Routes>
       <Footer />
     </>

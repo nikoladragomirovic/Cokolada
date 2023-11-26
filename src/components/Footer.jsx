@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="container mx-auto flex flex-col items-center justify-center text-text">
         <p>&copy; 2023 Ћоколада</p>
         <Link to="/report" className="flex flex-row items-center mt-3">
-          <BsExclamationCircleFill className="text-xl text-text mr-2" />
+          <BsExclamationCircleFill className="text-xl text-text" />
         </Link>
       </div>
     </footer>

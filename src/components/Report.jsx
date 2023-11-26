@@ -1,32 +1,29 @@
 import React from "react";
 import { IoSend } from "react-icons/io5";
-import { useState } from 'react';
-import axios from 'axios';
+import { useState } from "react";
+import axios from "axios";
 
 const Report = () => {
-  const [email, setEmail] = useState('');
-  const [text, setText] = useState('');
-
-  // const [textAreaEmail, setTextAreaEmail] = useState('Ваша е-пошта');
-  // const [textAreaText, setTextAreaText] = useState('Ваша порука');
+  const [email, setEmail] = useState("");
+  const [text, setText] = useState("");
 
   const handleSubmit = async (event) => {
     event.preventDefault();
 
     try {
-      const response = await axios.post('http://165.232.125.184:8000/report', {
+      const response = await axios.post("http://165.232.125.184:8000/report", {
         email,
-        text
+        text,
       });
 
       console.log("great success", response);
     } catch (err) {
       console.log("error submitting report");
     } finally {
-      setEmail("")
-      setText("")
+      setEmail("");
+      setText("");
     }
-  }
+  };
 
   return (
     <div className="flex flex-col items-center justify-center">
@@ -40,7 +37,10 @@ const Report = () => {
           placeholder="Ваша е-пошта"
           value={email}
         ></textarea>
-        <IoSend className="text-5xl mx-8 -rotate-90 text-text" onClick={handleSubmit}/>
+        <IoSend
+          className="text-5xl mx-8 hover:-rotate-90 duration-500 text-text"
+          onClick={handleSubmit}
+        />
       </div>
       <textarea
         className="mb-20 p-2 text-text outline-2 outline-offset-0 outline outline-text focus:outline-4 focus:outline-accent duration-150 text-xl resize-none align-text-top w-1/2 placeholder-text h-[450px] bg-secondary rounded-md"

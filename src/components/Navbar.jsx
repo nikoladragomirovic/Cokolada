@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { DarkModeSwitch } from "react-toggle-dark-mode";
+import { ImPlus } from "react-icons/im";
 
 const listItem = "mr-8 text-text text-lg tracking-wider duration-300";
 
@@ -46,6 +47,9 @@ const Navbar = () => {
           <li className="mr-8 text-text font-bold tracking-wider duration-300 text-2xl">
             <Link to="/fontovi">Аа</Link>
           </li>
+          <Link to="/post">
+            <ImPlus className="text-xl text-text mr-8" />
+          </Link>
           <DarkModeSwitch
             className="mr-8 duration-300"
             checked={isDarkMode}

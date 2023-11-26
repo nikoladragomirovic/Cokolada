@@ -9,10 +9,10 @@ const About = () => {
 
   return (
     <div className="grid grid-flow-col grid-cols-2 grid-rows-1">
-      <div className="flex flex-col items-center justify-start">
+      <div className="flex flex-col items-center justify-around">
         <h1 className={title}>О НАМА</h1>
         <div className="h-72 w-[500px] bg-text rounded-xl mt-14"></div>
-        <p className="m-16 text-center text-text">
+        <p className="m-24 text-center text-text">
           Лорем ипсум долор сит амет, цонсецтетур адиписцинг елит. Нуллам
           молестие рхонцус алиqуам. Нулла фацилисис аугуе сед рутрум ултрициес.
           Вестибулум вененатис фрингилла сагиттис. Лорем ипсум долор сит амет,
