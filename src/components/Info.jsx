@@ -14,7 +14,7 @@ const Info = () => {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          "http://165.232.125.184:8000/publication/" +
+          "http://localhost:8000/publication/" +
             location.pathname.replace(/^\/info\//, "")
         );
         setData(response.data[0]);
@@ -32,7 +32,7 @@ const Info = () => {
   const sendData = async () => {
     try {
       const response = await axios.post(
-        "http://165.232.125.184:8000/publication/comment",
+        "http://localhost:8000/publication/comment",
         {
           _id: location.pathname.replace(/^\/info\//, ""),
           username: username,
@@ -51,7 +51,7 @@ const Info = () => {
     <div className="flex flex-col items-center justify-center mb-10">
       <div className="flex flex-row items-center mt-16">
         <a
-          className="bg-secondary p-5 rounded-xl text-3xl text-text mr-4"
+          className="bg-secondary p-5 rounded-xl text-3xl text-text mr-4 hover:scale-110 duration-200"
           href={data && data.link}
         >
           <FaLink />
@@ -80,7 +80,7 @@ const Info = () => {
           ></textarea>
           <BiSolidComment
             onClick={sendData}
-            className="text-text text-3xl mx-5"
+            className="text-text text-4xl mx-5 hover:text-6xl duration-200"
           />
         </div>
         <textarea

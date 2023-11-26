@@ -11,7 +11,7 @@ const Report = () => {
     event.preventDefault();
 
     try {
-      const response = await axios.post("http://165.232.125.184:8000/report", {
+      const response = await axios.post("http://localhost:8000/report", {
         email,
         text,
       });

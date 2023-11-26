@@ -9,7 +9,7 @@ const About = () => {
 
   return (
     <div className="grid grid-flow-col grid-cols-2 grid-rows-1">
-      <div className="flex flex-col items-center justify-around">
+      <div className="flex flex-col items-center justify-center">
         <h1 className={title}>О НАМА</h1>
         <div className="h-72 w-[500px] bg-text rounded-xl mt-14 hover:animate-shake"></div>
         <p className="m-24 text-center text-text">
@@ -25,11 +25,11 @@ const About = () => {
           <h1 className={subtitle + " mt-14 mb-4"}>ДА</h1>
           <div className="flex flex-row items-center justify-start text-xl text-text mb-2">
             <TbPhoneFilled className="mr-2 text-3xl" />
-            +381 777888
+            +381 695548874
           </div>
           <div className="flex flex-row items-center justify-start text-xl text-text mb-2">
             <IoMdMail className="mr-2 text-3xl" />
-            darkoni@gmail.com
+            mihic.darko.01@gmail.com
           </div>
           <div className="flex flex-row items-center justify-start text-xl text-text">
             <RiInstagramFill className="mr-2 text-3xl" />
@@ -40,11 +40,11 @@ const About = () => {
           <h1 className={subtitle + " mt-6 mb-4"}>РО</h1>
           <div className="flex flex-row items-center justify-start text-xl text-text mb-2">
             <TbPhoneFilled className="mr-2 text-3xl" />
-            +381 777888
+            +381 691007322
           </div>
           <div className="flex flex-row items-center justify-start text-xl text-text mb-2">
             <IoMdMail className="mr-2 text-3xl" />
-            roskoni@gmail.com
+            david.rosic300@gmail.com
           </div>
           <div className="flex flex-row items-center justify-start text-xl text-text">
             <RiInstagramFill className="mr-2 text-3xl" />
@@ -55,11 +55,11 @@ const About = () => {
           <h1 className={subtitle + " mt-6 mb-4"}>НИ</h1>
           <div className="flex flex-row items-center justify-start text-xl text-text mb-2">
             <TbPhoneFilled className="mr-2 text-3xl" />
-            +381 777888
+            +381 612118877
           </div>
           <div className="flex flex-row items-center justify-start text-xl text-text mb-2">
             <IoMdMail className="mr-2 text-3xl" />
-            niloni@icloud.com
+            adragomirovic@icloud.com
           </div>
           <div className="flex flex-row items-center justify-start text-xl text-text mb-20">
             <RiInstagramFill className="mr-2 text-3xl" />

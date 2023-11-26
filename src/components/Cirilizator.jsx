@@ -155,7 +155,7 @@ const Cirilizator = () => {
       />
       <LuArrowRightToLine
         onClick={handleButtonClick}
-        className="text-text text-6xl rotate-90 my-3"
+        className="text-text text-6xl rotate-90 my-3 hover:scale-110 hover:translate-y-2 duration-150"
       />
       <textarea
         type="text"

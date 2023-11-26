@@ -15,7 +15,7 @@ const Feed = () => {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          "http://165.232.125.184:8000/publication" +
+          "http://localhost:8000/publication" +
             location.pathname +
             "/100/" +
             order
@@ -62,7 +62,7 @@ const Feed = () => {
 
   return (
     <div className="flex flex-col">
-      <h1 className="text-6xl font-bold tracking-wider text-center mt-20 text-text">
+      <h1 className="text-6xl font-bold tracking-wider text-center mt-20 text-text hover:animate-shake">
         {getTitle()}
       </h1>
       <button className="text-xl text-text" onClick={() => handleClick(order)}>
@@ -87,12 +87,12 @@ const Feed = () => {
                   onClick={stopPropagation}
                   href={item.link}
                 >
-                  <FaLink className="text-4xl" />
+                  <FaLink className="text-4xl hover:scale-[1.4]  duration-200" />
                 </a>
                 <span className="mx-10 text-text text-lg">
                   {item.description}
                 </span>
-                <div className="flex flex-row text-sm items-center justify-center rounded-md p-2 m-8 mt-0 text-background bg-text">
+                <div className="flex flex-row text-sm items-center justify-center rounded-2xl p-4 m-8 mt-0 text-background bg-text">
                   <span className="mr-4">{item.author}</span>
                   <span>{item.displayDate}</span>
                 </div>

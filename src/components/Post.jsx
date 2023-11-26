@@ -17,7 +17,7 @@ const Post = () => {
     try {
       console.log(category);
       const response = await axios.post(
-        "http://165.232.125.184:8000/publication/create",
+        "http://localhost:8000/publication/create",
         {
           category,
           title,
@@ -94,7 +94,7 @@ const Post = () => {
       ></textarea>
       <button
         onClick={handleSubmit}
-        className="mb-20 mt-10 py-2 text-lg p-5 bg-text rounded-xl text-background"
+        className="mb-20 mt-10 py-2 text-lg p-5 bg-text rounded-xl text-background hover:scale-110 duration-300"
       >
         ПОСТАВИ
       </button>

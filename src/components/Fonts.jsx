@@ -10,7 +10,7 @@ const Fonts = () => {
   const fetchDataAndPost = async () => {
     setLoading(true);
     try {
-      await axios.post("http://165.232.125.184:8000/scraper");
+      await axios.post("http://localhost:8000/scraper");
       await fetchData();
     } catch (error) {
       console.error("Error fetching and posting data:", error);
@@ -27,7 +27,7 @@ const Fonts = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get("http://165.232.125.184:8000/scraper");
+        const response = await axios.get("http://localhost:8000/scraper");
         setData(response.data);
       } catch (error) {
         console.error("Error fetching data:", error);

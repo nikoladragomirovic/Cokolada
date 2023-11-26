@@ -3,7 +3,7 @@ import Bento from "./Bento";
 import About from "./About";
 
 const title =
-  "text-9xl font-extrabold tracking-wider text-text duration-300 z-20 ";
+  "text-[200px] font-extrabold tracking-wider text-text duration-300 z-20 ";
 
 const Hero = () => {
   return (
@@ -115,7 +115,12 @@ const Hero = () => {
           малесуада малесуада еx, нон алиqуам нибх алиqует ац. Аенеан семпер,
           лецтус нец дапибус цонсецтетур, турпис еним лаореет
         </p>
-        <h1 className={title + "bounce-in-top mb-48"}>Ћоколада</h1>
+        <div className="flex flex-col items-center z-10 mb-48 bounce-in-top">
+          <h1 className={title}>Ћоколада</h1>
+          <p className="text-4xl font-bold tracking-wider text-center text-text">
+            ВЕБ ПОРТАЛ ПОСВЕЋЕН ЋИРИЛИЦИ
+          </p>
+        </div>
       </div>
       <Bento />
       <About />
