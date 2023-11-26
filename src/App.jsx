@@ -6,6 +6,7 @@ import Footer from "./components/Footer";
 import Feed from "./components/Feed";
 import Info from "./components/Info";
 import Report from "./components/Report";
+import DecapitalizeForm from "./components/decap";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/dizajn" element={<Feed />} />
         <Route path="/info/*" element={<Info />} />
         <Route path="/report" element={<Report />} />
+        <Route path="/test" element={<DecapitalizeForm />} />
       </Routes>
       <Footer />
     </>
