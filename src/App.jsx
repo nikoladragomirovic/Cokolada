@@ -6,7 +6,8 @@ import Footer from "./components/Footer";
 import Feed from "./components/Feed";
 import Info from "./components/Info";
 import Report from "./components/Report";
-import DecapitalizeForm from "./components/decap";
+import Cirilizator from "./components/Cirilizator";
+import Fonts from "./components/Fonts";
 
 function App() {
   return (
@@ -20,7 +21,8 @@ function App() {
         <Route path="/dizajn" element={<Feed />} />
         <Route path="/info/*" element={<Info />} />
         <Route path="/report" element={<Report />} />
-        <Route path="/test" element={<DecapitalizeForm />} />
+        <Route path="/cirilizator" element={<Cirilizator />} />
+        <Route path="/fontovi" element={<Fonts />} />
       </Routes>
       <Footer />
     </>

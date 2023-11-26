@@ -2,12 +2,16 @@ import React from "react";
 import Bento from "./Bento";
 import About from "./About";
 
-const title = "text-9xl font-extrabold tracking-wider text-text duration-300 ";
+const title =
+  "text-9xl font-extrabold tracking-wider text-text duration-300 z-20 ";
 
 const Hero = () => {
   return (
     <>
       <div className="w-full h-screen flex items-center justify-center bg-background duration-300 overflow-hidden relative">
+        <div className="w-full h-screen absolute bg-gradient-to-t from-background to-transparent z-10">
+          {" "}
+        </div>
         <p className="absolute font-bold tracking-wider opacity-20 text-center text-text z-1">
           Лорем ипсум долор сит амет, цонсецтетур адиписцинг елит. Нуллам
           молестие рхонцус алиqуам. Нулла фацилисис аугуе сед рутрум ултрициес.

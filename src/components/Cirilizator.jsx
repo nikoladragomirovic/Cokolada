@@ -1,6 +1,7 @@
 import React, { useState } from "react";
+import { LuArrowRightToLine } from "react-icons/lu";
 
-const DecapitalizeForm = () => {
+const Cirilizator = () => {
   const letterMap = {
     A: "А",
     B: "Б",
@@ -129,31 +130,41 @@ const DecapitalizeForm = () => {
   }
 
   const [inputText, setInputText] = useState("");
-  const [decapitalizedText, setDecapitalizedText] = useState("");
+  const [formatedText, setFormatedText] = useState("");
 
   const handleInputChange = (e) => {
     setInputText(e.target.value);
+    setFormatedText(transliterate(inputText));
   };
 
   const handleButtonClick = () => {
-    setDecapitalizedText(transliterate(inputText));
+    setFormatedText(transliterate(inputText));
   };
 
   return (
-    <div>
-      <label>
-        Input Text:
-        <input type="text" value={inputText} onChange={handleInputChange} />
-      </label>
-      <br />
-      <label>
-        Decapitalized Text:
-        <input type="text" value={decapitalizedText} readOnly />
-      </label>
-      <br />
-      <button onClick={handleButtonClick}>Decapitalize</button>
+    <div className="flex flex-col items-center justify-start">
+      <h1 className="text-6xl font-bold text-text mt-20 mb-20 tracking-wider">
+        ЋИРИЛИЗАТОР
+      </h1>
+      <textarea
+        type="text"
+        placeholder="Unesi latinični (или ћирилични) text"
+        value={inputText}
+        onChange={handleInputChange}
+        className=" p-2 text-text outline-2 outline-offset-0 outline outline-text focus:outline-4 focus:outline-accent duration-150 text-xl resize-none align-text-top w-1/2 placeholder-text h-[300px] bg-secondary rounded-md"
+      />
+      <LuArrowRightToLine
+        onClick={handleButtonClick}
+        className="text-text text-6xl rotate-90 my-3"
+      />
+      <textarea
+        type="text"
+        value={formatedText}
+        readOnly
+        className="mb-20 p-2 text-text outline-2 outline-offset-0 outline outline-text focus:outline-4 focus:outline-accent duration-150 text-xl resize-none align-text-top w-1/2 placeholder-text h-[300px] bg-secondary rounded-md"
+      />
     </div>
   );
 };
 
-export default DecapitalizeForm;
+export default Cirilizator;
