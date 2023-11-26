@@ -3,7 +3,8 @@ import { Link } from "react-router-dom";
 import { DarkModeSwitch } from "react-toggle-dark-mode";
 import { ImPlus } from "react-icons/im";
 
-const listItem = "mr-8 text-text text-lg tracking-wider duration-300";
+const listItem =
+  "mr-14 text-text text-lg tracking-wider duration-300 hover:scale-125 hover:font-bold";
 
 const Navbar = () => {
   const [isDarkMode, setDarkMode] = React.useState(true);
@@ -18,9 +19,9 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="sticky top-0 left-0 w-full bg-background py-3 duration-300 outline outline-1 outline-text z-50">
+    <nav className="sticky top-0 left-0 w-full bg-background py-3 duration-300 outline outline-1 outline-text z-50 animate-shake hover:py-10">
       <ul className="flex flex-row items-center justify-between">
-        <li className="text-3xl font-extrabold tracking-wider ml-5 text-text duration-300">
+        <li className="text-3xl font-extrabold tracking-wider ml-5 text-text duration-300 hover:scale-105">
           <Link to="/">Ћоколада</Link>
         </li>
         <div className="flex flex-row items-center justify-start duration-300">
@@ -36,22 +37,22 @@ const Navbar = () => {
           <li className={listItem}>
             <Link to="/magazin">Магазин</Link>
           </li>
-          <li className={listItem}>
+          <li className="text-text text-lg tracking-wider duration-300 hover:scale-125 hover:font-bold">
             <Link to="https://discord.gg/kwmkuGjzYu">Заједница</Link>
           </li>
         </div>
         <div className="flex flex-row items-center">
-          <li className="mr-8 text-text font-bold tracking-wider duration-300 text-2xl">
-            <Link to="/cirilizator">Ћ</Link>
-          </li>
-          <li className="mr-8 text-text font-bold tracking-wider duration-300 text-2xl">
-            <Link to="/fontovi">Аа</Link>
-          </li>
           <Link to="/post">
             <ImPlus className="text-xl text-text mr-8" />
           </Link>
+          <li className="mr-8 text-text font-bold tracking-wider duration-300 text-2xl">
+            <Link to="/fontovi">Аа</Link>
+          </li>
+          <li className="mr-8 text-text font-bold tracking-wider duration-300 text-2xl">
+            <Link to="/cirilizator">Ћ</Link>
+          </li>
           <DarkModeSwitch
-            className="mr-8 duration-300"
+            className="mr-8 duration-300 mb-1"
             checked={isDarkMode}
             size={24}
             onChange={toggleDarkMode}

@@ -12,7 +12,7 @@ const Hero = () => {
         <div className="w-full h-screen absolute bg-gradient-to-t from-background to-transparent z-10">
           {" "}
         </div>
-        <p className="absolute font-bold tracking-wider opacity-20 text-center text-text z-1">
+        <p className="absolute tracking-wider opacity-30 text-center text-lg text-text z-1 animate-pulse">
           Лорем ипсум долор сит амет, цонсецтетур адиписцинг елит. Нуллам
           молестие рхонцус алиqуам. Нулла фацилисис аугуе сед рутрум ултрициес.
           Вестибулум вененатис фрингилла сагиттис. Интердум ет малесуада фамес

@@ -4,7 +4,7 @@ import { FaLink } from "react-icons/fa";
 import axios from "axios";
 
 const Feed = () => {
-  const box = "bg-secondary rounded-xl duration-300";
+  const box = "bg-secondary rounded-xl duration-300 hover:scale-95";
 
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -79,20 +79,22 @@ const Feed = () => {
                   index
                 )} flex flex-col items-center justify-around`}
               >
-                <span className="m-5 mb-3 text-center text-3xl font-bold tracking-wider text-text">
+                <span className="m-5 mb-0 text-center text-3xl font-bold tracking-wider text-text">
                   {item.title}
                 </span>
                 <a
-                  className="bg-primary p-3 rounded-md mb-3 text-background"
+                  className="text-text"
                   onClick={stopPropagation}
                   href={item.link}
                 >
-                  <FaLink className="text-2xl" />
+                  <FaLink className="text-4xl" />
                 </a>
-                <span className="mx-10 mb-2 text-text">{item.description}</span>
-                <div className="flex flex-col items-center justify-center px-5 py-3 rounded-md mb-5 bg-accent">
-                  <span className="text-xl text-text">{item.author}</span>
-                  <span className="text-text text-xl">{item.displayDate}</span>
+                <span className="mx-10 text-text text-lg">
+                  {item.description}
+                </span>
+                <div className="flex flex-row text-sm items-center justify-center rounded-md p-2 m-8 mt-0 text-background bg-text">
+                  <span className="mr-4">{item.author}</span>
+                  <span>{item.displayDate}</span>
                 </div>
               </Link>
             ))}

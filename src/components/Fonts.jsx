@@ -46,7 +46,7 @@ const Fonts = () => {
       </h1>
       <IoRefreshCircle
         onClick={refreshData}
-        className="text-text text-5xl mb-10"
+        className="text-text text-5xl mb-10 duration-300 hover:scale-125 hover:rotate-[360deg]"
       />
       {data &&
         data

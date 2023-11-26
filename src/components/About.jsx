@@ -11,19 +11,17 @@ const About = () => {
     <div className="grid grid-flow-col grid-cols-2 grid-rows-1">
       <div className="flex flex-col items-center justify-around">
         <h1 className={title}>О НАМА</h1>
-        <div className="h-72 w-[500px] bg-text rounded-xl mt-14"></div>
+        <div className="h-72 w-[500px] bg-text rounded-xl mt-14 hover:animate-shake"></div>
         <p className="m-24 text-center text-text">
-          Лорем ипсум долор сит амет, цонсецтетур адиписцинг елит. Нуллам
-          молестие рхонцус алиqуам. Нулла фацилисис аугуе сед рутрум ултрициес.
-          Вестибулум вененатис фрингилла сагиттис. Лорем ипсум долор сит амет,
-          цонсецтетур адиписцинг елит. Нуллам молестие рхонцус алиqуам. Нулла
-          фацилисис аугуе сед рутрум ултрициес. Вестибулум вененатис фрингилла
-          сагиттис.
+          Добродошли у наш виртуелни свет, где се иновације и креативност
+          ускупљују под нашим динамичким ћирилизатором и базом података на делу!
+          Ми смо предани развоју веб простора на ћирилици, пружајући вам
+          несгаснуту извор инспирације и иновативних технологија.
         </p>
       </div>
       <div className="flex flex-col items-center justify-start">
         <h1 className={title}>КОНТАКТ</h1>
-        <div>
+        <div className="hover:translate-x-5 duration-200">
           <h1 className={subtitle + " mt-14 mb-4"}>ДА</h1>
           <div className="flex flex-row items-center justify-start text-xl text-text mb-2">
             <TbPhoneFilled className="mr-2 text-3xl" />
@@ -38,7 +36,7 @@ const About = () => {
             @darko.mihic
           </div>
         </div>
-        <div>
+        <div className="hover:translate-x-5 duration-200">
           <h1 className={subtitle + " mt-6 mb-4"}>РО</h1>
           <div className="flex flex-row items-center justify-start text-xl text-text mb-2">
             <TbPhoneFilled className="mr-2 text-3xl" />
@@ -53,7 +51,7 @@ const About = () => {
             @david.rosic
           </div>
         </div>
-        <div>
+        <div className="hover:translate-x-5 duration-200">
           <h1 className={subtitle + " mt-6 mb-4"}>НИ</h1>
           <div className="flex flex-row items-center justify-start text-xl text-text mb-2">
             <TbPhoneFilled className="mr-2 text-3xl" />

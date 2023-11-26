@@ -43,11 +43,17 @@ const Report = () => {
         />
       </div>
       <textarea
-        className="mb-20 p-2 text-text outline-2 outline-offset-0 outline outline-text focus:outline-4 focus:outline-accent duration-150 text-xl resize-none align-text-top w-1/2 placeholder-text h-[450px] bg-secondary rounded-md"
+        className="p-2 text-text outline-2 outline-offset-0 outline outline-text focus:outline-4 focus:outline-accent duration-150 text-xl resize-none align-text-top w-1/2 placeholder-text h-[450px] bg-secondary rounded-md"
         onChange={(event) => setText(event.target.value)}
         placeholder="Ваша порука"
         value={text}
       ></textarea>
+      <a
+        className="mb-20 mt-2 underline underline-offset-4 text-text"
+        href="/reportboard"
+      >
+        Можда је ваше питање већ постављено, посети репорт борд.
+      </a>
     </div>
   );
 };
