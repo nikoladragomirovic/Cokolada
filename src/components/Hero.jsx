@@ -1,5 +1,6 @@
 import React from "react";
 import Bento from "./Bento";
+import About from "./About";
 
 const title = "text-9xl font-extrabold tracking-wider text-text duration-300 ";
 
@@ -96,6 +97,7 @@ const Hero = () => {
         <h1 className={title + "bounce-in-top mb-36"}>Ћоколада</h1>
       </div>
       <Bento />
+      <About />
     </>
   );
 };

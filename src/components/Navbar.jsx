@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { DarkModeSwitch } from "react-toggle-dark-mode";
+import { BsExclamationCircleFill } from "react-icons/bs";
 
 const listItem = "mr-8 text-text text-xl tracking-wider duration-300";
 
@@ -24,9 +25,6 @@ const Navbar = () => {
         </li>
         <div className="flex flex-row items-center justify-start duration-300">
           <li className={listItem}>
-            <Link to="/onama">О нама</Link>
-          </li>
-          <li className={listItem}>
             <Link to="/razvoj">Развој</Link>
           </li>
           <li className={listItem}>
@@ -39,14 +37,15 @@ const Navbar = () => {
             <Link to="/magazin">Магазин</Link>
           </li>
           <li className={listItem}>
-            <Link to="/zajednica">Заједница</Link>
+            <Link to="https://discord.gg/kwmkuGjzYu">Заједница</Link>
           </li>
-          <li className={listItem}>
-            <Link to="/kontakt">Контакт</Link>
-          </li>
+          <Link to="/report">
+            <BsExclamationCircleFill className="text-xl text-text mr-8" />
+          </Link>
           <DarkModeSwitch
             className="mr-8 duration-300"
             checked={isDarkMode}
+            size={24}
             onChange={toggleDarkMode}
             moonColor="var(--text)"
             sunColor="var(--text)"
