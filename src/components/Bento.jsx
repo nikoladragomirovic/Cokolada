@@ -15,7 +15,7 @@ const Bento = () => {
   const subtitle = "text-center m-8 text-text ";
 
   return (
-    <div className="max-w-screen-xl mx-auto duration-300 my-20">
+    <div className="h-screen max-w-screen-xl mx-auto duration-300 my-20">
       <div className="h-screen grid auto-rows-[400px] grid-cols-6 gap-4">
         <Link to="/dizajn" className={box + " col-span-2"}>
           <h1 className={title}>ДИЗАЈН</h1>
