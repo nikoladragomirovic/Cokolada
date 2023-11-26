@@ -7,8 +7,8 @@ const title = "text-9xl font-extrabold tracking-wider text-text duration-300 ";
 const Hero = () => {
   return (
     <>
-      <div className="w-full h-screen flex items-start justify-center bg-background duration-300 overflow-hidden">
-        <p className="absolute font-bold tracking-wider opacity-20 text-center text-text z-1 text-clip">
+      <div className="w-full h-screen flex items-start justify-center bg-background duration-300 overflow-hidden relative">
+        <p className="absolute font-bold tracking-wider opacity-20 text-center text-text z-1">
           Лорем ипсум долор сит амет, цонсецтетур адиписцинг елит. Нуллам
           молестие рхонцус алиqуам. Нулла фацилисис аугуе сед рутрум ултрициес.
           Вестибулум вененатис фрингилла сагиттис. Интердум ет малесуада фамес
