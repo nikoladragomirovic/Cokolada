@@ -2,6 +2,7 @@ import React from "react";
 import { TbPhoneFilled } from "react-icons/tb";
 import { IoMdMail } from "react-icons/io";
 import { RiInstagramFill } from "react-icons/ri";
+import mi from "../assets/mi.jpeg";
 
 const About = () => {
   const title = "text-5xl font-bold tracking-wider text-text";
@@ -11,8 +12,8 @@ const About = () => {
     <div className="grid grid-flow-col grid-cols-2 grid-rows-1">
       <div className="flex flex-col items-center justify-center">
         <h1 className={title}>О НАМА</h1>
-        <div className="h-72 w-[500px] bg-text rounded-xl mt-14 hover:animate-shake"></div>
-        <p className="m-24 text-center text-text">
+        <img src={mi} className="max-h-72 mt-10 rounded-3xl"></img>
+        <p className="m-24 mt-12 text-center text-text">
           Добродошли у наш виртуелни свет, где се иновације и креативност
           ускупљују под нашим динамичким ћирилизатором и базом података на делу!
           Ми смо предани развоју веб простора на ћирилици, пружајући вам
