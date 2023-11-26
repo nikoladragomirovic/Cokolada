@@ -14,7 +14,7 @@ const Info = () => {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:8000/publication/" +
+          "http://165.232.125.184:8000/publication/" +
             location.pathname.replace(/^\/info\//, "")
         );
         setData(response.data[0]);
@@ -32,7 +32,7 @@ const Info = () => {
   const sendData = async () => {
     try {
       const response = await axios.post(
-        "http://localhost:8000/publication/comment",
+        "http://165.232.125.184:8000/publication/comment",
         {
           _id: location.pathname.replace(/^\/info\//, ""),
           username: username,

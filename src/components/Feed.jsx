@@ -15,7 +15,7 @@ const Feed = () => {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:8000/publication" +
+          "http://165.232.125.184:8000/publication" +
             location.pathname +
             "/100/" +
             order

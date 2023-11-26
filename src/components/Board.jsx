@@ -9,7 +9,7 @@ const Board = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get("http://localhost:8000/report");
+        const response = await axios.get("http://165.232.125.184:8000/report");
         console.log(response);
         setData(response.data);
       } catch (error) {

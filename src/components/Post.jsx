@@ -17,7 +17,7 @@ const Post = () => {
     try {
       console.log(category);
       const response = await axios.post(
-        "http://localhost:8000/publication/create",
+        "http://165.232.125.184:8000/publication/create",
         {
           category,
           title,
